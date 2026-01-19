@@ -3,15 +3,15 @@ class Solution:
         max_pop = 0
         answer = 1950
 
-        for year in range(1950, 2051):
+        for year in range(1950,2051):
             count = 0
 
-            for birth, death in logs:
+            for birth,death in logs:
                 if birth <= year < death:
                     count += 1
-
+            
             if count > max_pop:
                 max_pop = count
                 answer = year
-
+        
         return answer

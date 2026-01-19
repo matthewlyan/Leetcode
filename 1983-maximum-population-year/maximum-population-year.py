@@ -1,7 +1,7 @@
 class Solution:
     def maximumPopulation(self, logs: List[List[int]]) -> int:
         max_pop = 0
-        answer = 1950
+        answer = 0
 
         for year in range(1950,2051):
             count = 0
